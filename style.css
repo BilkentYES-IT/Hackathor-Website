@@ -194,7 +194,15 @@ body {
   overflow: hidden;
   background-repeat:no-repeat;
   background-size:cover;
+  border-radius: 20px;
+  border-top: 5px solid #2162C1;
+  border-bottom: 5px solid #2162C1;
+  border-right: 5px solid #fff;
+  border-left: 5px solid #fff;
 
+}
+.social i{
+    color;
 }
 .section-title{
     text-align: center;
@@ -235,7 +243,7 @@ body {
   display: block;
   width: 50px;
   height: 1px;
-  background: #b1cbd7;
+  background: #2162C1;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -245,19 +253,75 @@ body {
   font-size: 13px;
 }
 .team .member .social {
-  margin-top: 17px;
+  margin-top: 50px;
 }
 .team .member .social a {
   transition: color 0.3s;
-  color: #52869d;
+  color: #2162C1;
 }
 .team .member .social a:hover {
-  color: #67b0d1;
+  color: #2162C1;
 }
+.member-info span{
+    margin-bottom: 10px;
+}
+/* Fancy Buttons starts here */
 .team .member .social{
   display: flex;
+  position: relative;
   justify-content: space-evenly;
 }
+.team .member .social ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.team .member .social ul li{
+    list-style: none;
+    margin: 0 15px;
+    margin-bottom: 25px;
+}
+.team .member .social ul li a{
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: all ease .5s;
+}
+.team .member .social ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #2162C1;
+    transition: all ease .5s;
+    z-index: -1;
+}
+.team .member .social ul li a:hover:before{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #2162C1;
+}
+.team .member .social ul li a:hover{
+    color: #2162C1;
+    box-shadow: 0 0 5px #2162C1;
+    text-shadow: #2162C1;
+    border: 5px solid #2162C1;
+}
+/* Ends here */
 .team .member .social i {
   font-size: 24px;
 }
