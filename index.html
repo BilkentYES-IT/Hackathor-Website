@@ -6,268 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: #2162C1;
-    color: #fff;
-    padding: 120px 35px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .img-responsive {
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 250px;
-  }
-  .logo-small {
-    width: auto;
-    height: auto;
-  }
-  .logo {
-    color: #2162C1;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 25px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #2162C1;
-  }
-  .carousel-indicators li {
-    border-color: #2162C1;
-  }
-  .carousel-indicators li.active {
-    background-color: #2162C1;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #2162C1; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #2162C1;
-    background-color: #fff !important;
-    color: #2162C1;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #2162C1 !important;
-    padding: 45px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #2162C1;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #2162C1;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 2.5 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #2162C1 !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #2162C1;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
-  }
-
-  /*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team .member {
-  text-align: center;
-  margin-bottom: 80px;
-  position: relative;
-}
-.team .member .pic {
-  overflow: hidden;
-  background-repeat:no-repeat;
-  background-size:cover;
-
-}
-.team .member .member-info {
-  position: absolute;
-  top: 85%;
-  left: 20px;
-  right: 20px;
-  background: #fff;
-  padding: 20px 0;
-  color: #2f4d5a;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  max-height: 95px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-}
-.team .member:hover .member-info {
-  max-height: 300px;
-}
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #2f4d5a;
-  position: relative;
-  padding-bottom: 10px;
-}
-.team .member h4::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #b1cbd7;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-.team .member .social {
-  margin-top: 15px;
-}
-.team .member .social a {
-  transition: color 0.3s;
-  color: #52869d;
-}
-.team .member .social a:hover {
-  color: #67b0d1;
-}
-.team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
-}
-@media (max-width: 992px) {
-  .team .member {
-    margin-bottom: 110px;
-  }
-}
-  </style>
 
 <!-- Header (Header Section) -->
 </head>
@@ -276,16 +20,10 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
-
-
-
-
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top"> <!-- navbar -->
+  <div class="container" id="header">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -386,42 +124,37 @@
       <h2>Takımımız</h2>
       <p>2022-2023 Takımımız</p>
     </div>
-
+                
     <div class="column">
-
       <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="member" data-aos="fade-up">
-            <div class="pic"><img src="assets/team/eda.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Eda Duru Yazıcı</h4>
-              <span>Yönetim Kurulu Başkanı</span>
-              <div class="social">
-                <a href="https://twitter.com/bilkentyes"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.facebook.com/edaduruyazici"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/edaduruyazici/"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/eda-duru-yaz%C4%B1c%C4%B1-1757a7196"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
+        <div id = "firstrow" class="col-lg-4 col-md-6">
           <div class="member" data-aos="fade-up" data-aos-delay="150">
             <div class="pic"><img src="assets/team/bilgehan.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Bilgehan Demirkaya</h4>
               <span>Hackathor Koordinatörü</span>
               <div class="social">
-                <a href="https://twitter.com/bilgehan_dk"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100008274998763"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/bilgehandk/"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/bilgehan-demirkaya-32210b193/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/bilgehan-demirkaya-32210b193/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://github.com/bilgehandk" target="_blank"><i class="fa-brands fa-github"></i></a> 
               </div>
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="member" data-aos="fade-up" data-aos-delay="150">
+            <div class="pic"><img src="assets/team/bilgehan.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Can Kayıkcı</h4>
+              <span>Hackathor Koordinatörü</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/bilgehan-demirkaya-32210b193/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://github.com/bilgehandk" target="_blank"><i class="fa-brands fa-github"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
       </div>
 
 
