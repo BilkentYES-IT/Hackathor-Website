@@ -24,8 +24,8 @@ body {
   #header #menu ul li:last-of-type{
       margin-right: 15px;
   }
-  #hackathorlogo{
-      padding-left: 100px;
+  .navbar-header{
+      margin-left: 10%;
   }
   /* Border Radius to menu bar */
   #myNavbar ul li a{
@@ -52,11 +52,23 @@ body {
     font-weight: 400;
     margin-bottom: 30px;
   }  
+  /* Hackathor basliyor section */
   .jumbotron {
     background-color: #2162C1;
-    color: #fff;
+    color: #2162C1;
     padding: 120px 35px;
+    height: 500px;
     font-family: Montserrat, sans-serif;
+    background: url(../Hackathor-Website/assets/hackathor2.png);
+  }
+  .jumbotron h1{
+      margin-top: 10%;
+  }
+  .jumbotron p{
+      font-size: 36px;
+      font-family: 'Monoton', cursive;      
+      margin: 15px;
+
   }
   .container-fluid {
     padding: 60px 50px;
