@@ -3,6 +3,41 @@ body {
     line-height: 1.8;
     color: #818181;
   }
+  /* Header */
+  #header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+  }
+  #header #menu ul{
+      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+  #header #menu ul li{
+    margin-left: 100px;
+  }
+  #header #menu ul li:last-of-type{
+      margin-right: 15px;
+  }
+  #hackathorlogo{
+      padding-left: 100px;
+  }
+  /* Border Radius to menu bar */
+  #myNavbar ul li a{
+      border-radius: 50px; 
+  }
+  #header{
+      height: 100%;
+  }
+  .navbar-brand{
+      display: inline-block;
+      margin: 0 auto;
+  }
   h2 {
     font-size: 24px;
     text-transform: uppercase;
