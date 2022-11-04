@@ -7,19 +7,19 @@ body {
   #header{
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
-      height: 100px;
+      margin-bottom: 2%;
   }
   #header #menu ul{
-      width: 100%;
+      /* width: 100%; */
       display: flex;
       flex: 1;
       flex-direction: row;
-      justify-content: flex-end;
+      padding-left: 25%;
   }
   #header #menu ul li{
-    margin-left: 100px;
+    margin-left: 30px;
   }
   #header #menu ul li:last-of-type{
       margin-right: 15px;
@@ -184,6 +184,10 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
     color: #2162C1;
+  }
+  .row:last-of-type{
+      margin-top: 25px;
+      
   }
   .slideanim {visibility:hidden;}
   .slide {
