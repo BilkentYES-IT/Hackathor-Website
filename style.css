@@ -60,6 +60,7 @@ body {
     height: 500px;
     font-family: Montserrat, sans-serif;
     background: url(../Hackathor-Website/assets/hackathor2.png);
+    border-bottom: 2px solid #2162C1;
   }
   .jumbotron h1{
       margin-top: 10%;
@@ -68,7 +69,16 @@ body {
       font-size: 36px;
       font-family: 'Monoton', cursive;      
       margin: 15px;
-
+  }
+  /* About */
+  #about .row{
+      display: flex;
+      justify-content: space-around;
+      padding: 0px 5%;
+  }
+  .left{
+      width: 500px;
+      flex: 1;
   }
   .container-fluid {
     padding: 60px 50px;
