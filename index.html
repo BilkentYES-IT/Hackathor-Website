@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- checking -->
+  
   <title>HACKATHOR</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -161,7 +161,6 @@
             <div class="member-info">
               <h4>Can Kayıkcı</h4>
               <span>Lead Developer</span>
-<<<<<<< Updated upstream
               <div class="social">
                 <ul>
                   <li>
@@ -187,33 +186,6 @@
                     <a href="https://www.linkedin.com/in/onurcan-gen%C3%A7-b582311b9/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
                   </li>
                   <li>
-=======
-              <div class="social">
-                <ul>
-                  <li>
-                    <a href="https://www.linkedin.com/in/can-kay%C4%B1kc%C4%B1-381a8519a/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/cankayikci0" target="_blank"><i class="fa-brands fa-github"></i></a> 
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="member" data-aos="fade-up" data-aos-delay="150">
-            <div class="pic"><img src="assets/team/bilgehan.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Onurcan Genç</h4>
-              <span>Hackathor Koordinatörü</span>
-              <div class="social">
-                <ul>
-                  <li>
-                    <a href="https://www.linkedin.com/in/onurcan-gen%C3%A7-b582311b9/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-                  </li>
-                  <li>
->>>>>>> Stashed changes
                     <a href="https://github.com/onurcangnc" target="_blank"><i class="fa-brands fa-github"></i></a> 
                   </li>
                 </ul>
@@ -228,11 +200,7 @@
             <div class="pic"><img src="assets/team/bilgehan.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Emirhan Kaya</h4>
-<<<<<<< Updated upstream
               <span>Developer</span>
-=======
-              <span>Hackathor Koordinatörü</span>
->>>>>>> Stashed changes
               <div class="social">
                 <ul>
                   <li>
@@ -251,11 +219,7 @@
             <div class="pic"><img src="assets/team/bilgehan.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Simay Ardıç</h4>
-<<<<<<< Updated upstream
               <span>Developer</span>
-=======
-              <span>Hackathor Koordinatörü</span>
->>>>>>> Stashed changes
               <div class="social">
                 <ul>
                   <li>
@@ -273,13 +237,8 @@
           <div class="member" data-aos="fade-up" data-aos-delay="150">
             <div class="pic"><img src="assets/team/bilgehan.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-<<<<<<< Updated upstream
               <h4>Ece Temizkalb</h4>
               <span>Developer</span>
-=======
-              <h4>Can Kayıkcı</h4>
-              <span>Hackathor Koordinatörü</span>
->>>>>>> Stashed changes
               <div class="social">
                 <ul>
                   <li>
@@ -334,11 +293,14 @@
 
 <!-- Image of location/map -->
 
-<footer class="container-fluid text-center">
+<!-- <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-</footer>
+</footer> -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
 <script>
 $(document).ready(function(){
@@ -435,6 +397,35 @@ var x = setInterval(function() {
     }
 
   });
+
+  //to the top button
+  //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
 </script>
 
 
