@@ -57,32 +57,128 @@ body {
     margin-bottom: 30px;
   }  
   /* Hackathor basliyor section */
-  .jumbotron {
-    background-color: #2162C1;
+  .clock {
     color: #2162C1;
     padding: 120px 35px;
     height: 500px;
-    font-family: Montserrat, sans-serif;
-    background: url(../Hackathor-Website/assets/hackathor2.png);
-    border-bottom: 2px solid #2162C1;
+    background: inherit;
+
   }
-  .jumbotron h1{
+  .clock h1{
       margin-top: 10%;
+      font-family: 'Anton', sans-serif;
+
   }
-  .jumbotron p{
-      font-size: 36px;
+  .clock p{
+
       font-family: 'Monoton', cursive;      
-      margin: 15px;
+      margin-top: 15px;
   }
   /* About */
+   body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+.rain{
+    height: 100vh;
+    background-image: url(./assets/rain.png);
+    animation: rain 0.3s linear infinite;
+    background-color: rgb(32, 32, 32);
+    height: 2000px;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes rain{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 20% 100%;
+    }
+}
+
+.rain::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/lightining.png);
+    top: -100px;
+    transform: rotate(180deg);
+    animation: lightining 4s linear infinite;
+    opacity: 1;
+}
+.lightining{
+  position: absolute;
+  top: 1000px;
+  width: 10px;
+}
+@keyframes lightining{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    31%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    } 
+  }
   #about .row{
       display: flex;
       justify-content: space-around;
       padding: 0px 5%;
   }
+  .clock{
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  .clock h1{
+    font-size: 120px;
+    font-family: re;
+    color: #e0e0e0;
+  }
+  .clock p{
+    font-size: 60px;
+  }
+  #about, #mission{
+    margin: 50px auto;
+    width: 70%;
+    border-radius: 50px;
+background: #2162C1;
+box-shadow:  -20px 20px 60px #12366a,
+             20px -20px 60px #308eff;
+  }
+  #about, #mission div{
+    font-size: 14px;
+  }
   .left{
-      width: 500px;
-      flex: 1;
+    margin: auto 5px;
+      width: 70%;
+      color: #fff;
+  }
+  .left h2,h4,p,.btn{
+    color: white;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -259,13 +355,13 @@ body {
 #about.left{
   width: 20px;
 }
-section  div {
+/* section  div {
   color: #000;
   position: relative;
   text-decoration: none;
-}
+} */
 
-section>div::before {
+/* section>div::before {
   background: #2162C1;
   content: "";
   inset: 0;
@@ -278,7 +374,7 @@ section>div::before {
 
 section>div:hover::before {
   transform: scaleX(1);
-}
+} */
 
 
 
@@ -296,7 +392,7 @@ section>div:hover::before {
   width: 20px;
 }
 
-section  div:last-of-type {
+/* section  div:last-of-type {
   color: #000;
   position: relative;
   text-decoration: none;
@@ -315,7 +411,7 @@ section>div:last-of-type:before {
 
 section div:hover::before {
   transform: scaleX(1);
-}
+} */
   /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
