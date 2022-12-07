@@ -85,7 +85,7 @@ body {
     background-image: url(./assets/rain.png);
     animation: rain 0.3s linear infinite;
     background-color: rgb(32, 32, 32);
-    height: 2000px;
+    height: 100%;
     padding-top: 1%;
     display: flex;
     flex-direction: column;
@@ -161,7 +161,7 @@ body {
   .clock p{
     font-size: 60px;
   }
-  #about, #mission{
+  #about, #mission, #contact{
     margin: 50px auto;
     width: 70%;
     border-radius: 50px;
