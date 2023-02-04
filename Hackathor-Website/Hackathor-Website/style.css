@@ -45,6 +45,7 @@ body {
   h2 {
     font-size: 24px;
     text-transform: uppercase;
+    color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
   }
@@ -58,7 +59,7 @@ body {
   /* Hackathor basliyor section */
   .clock {
     color: #2162C1;
-    padding: 5px 35px;
+    padding: 120px 35px;
     height: 500px;
     background: inherit;
 
@@ -84,7 +85,7 @@ body {
     background-image: url(./assets/rain.png);
     animation: rain 0.3s linear infinite;
     background-color: rgb(32, 32, 32);
-    height: 100%;
+    height: 2000px;
     padding-top: 1%;
     display: flex;
     flex-direction: column;
@@ -97,22 +98,7 @@ body {
         background-position: 20% 100%;
     }
 }
-.clip-text{
-  background: url(https://media.giphy.com/media/fqVodOPZg9uBYvYjes/giphy.gif);
-  background-size: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-  color: transparent; // set to transparent, otherwise won't see the background
-  
-  width: 300px;
-  height: 100px;
-  box-sizing: border-box;
-  font-size: 58px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  flex-shrink: 0;
-}
+
 .rain::before{
     content: "";
     position: absolute;
@@ -175,15 +161,14 @@ body {
   .clock p{
     font-size: 60px;
   }
-  #about, #mission, #contact{
+  #about, #mission{
     margin: 50px auto;
-    width: 90%;
+    width: 70%;
     border-radius: 50px;
 background: #2162C1;
 box-shadow:  -20px 20px 60px #12366a,
              20px -20px 60px #308eff;
   }
-  
   #about, #mission div{
     font-size: 14px;
   }
@@ -192,7 +177,7 @@ box-shadow:  -20px 20px 60px #12366a,
       width: 70%;
       color: #fff;
   }
-  .left,h4,p,.btn{
+  .left h2,h4,p,.btn{
     color: white;
   }
   .container-fluid {
@@ -358,7 +343,18 @@ box-shadow:  -20px 20px 60px #12366a,
     }
   }
 /* ABOUT SECTION */
+#about{
+  display: flex;
+  height: 400px;
+}
 
+#about .row{
+  width: 100%;
+  justify-content: space-evenly;
+} 
+#about.left{
+  width: 20px;
+}
 /* section  div {
   color: #000;
   position: relative;
@@ -421,7 +417,6 @@ section div:hover::before {
 --------------------------------------------------------------*/
 .team .member {
   text-align: center;
-
   margin-bottom: 80px;
   position: relative;
 }
@@ -436,7 +431,9 @@ section div:hover::before {
   border-left: 5px solid #fff;
 
 }
-.pic{height: 320px;}
+.social i{
+    color;
+}
 .section-title{
     text-align: center;
 }
